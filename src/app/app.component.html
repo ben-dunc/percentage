@@ -1,6 +1,11 @@
 <div class="page">
   <div class="body">
-    <h1 class="num">{{showPerStr}}</h1>
+    <h1
+      [@fade]="isTextVisible ? 'visible' : 'hidden'"
+      class="num"
+      >{{showPerStr}}</h1>
+      <!-- [ngStyle]="{'color': 'hsl(' + textHue + 'deg, 90%, 60%, 1)'}" -->
+    <p [@fadeSlow]="isDescVisible ? 'visible' : 'hidden'">{{description}}</p>
   </div>
 </div>
 
