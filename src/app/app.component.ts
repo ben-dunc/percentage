@@ -53,7 +53,7 @@ export class AppComponent {
   }
 
   calcDelay(difference: number): number {
-    return Math.min(400, (2000 / difference));
+    return Math.min(400, (1500 / difference));
   }
 
   delay(ms: number) {

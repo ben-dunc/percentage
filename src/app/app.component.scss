@@ -1,13 +1,18 @@
 .body {
   max-width: 500px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.desc {
+  text-align: center;
+  padding: 0 16px;
+  margin: 0;
 }
 
 .num {

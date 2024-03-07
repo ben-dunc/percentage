@@ -2,10 +2,14 @@
   <div class="body">
     <h1
       [@fade]="isTextVisible ? 'visible' : 'hidden'"
+      #percentage
       class="num"
-      >{{showPerStr}}</h1>
+    >{{showPerStr}}</h1>
       <!-- [ngStyle]="{'color': 'hsl(' + textHue + 'deg, 90%, 60%, 1)'}" -->
-    <p [@fadeSlow]="isDescVisible ? 'visible' : 'hidden'">{{description}}</p>
+    <p
+      [@fadeSlow]="isDescVisible ? 'visible' : 'hidden'"
+      class="desc"
+    >{{description}}</p>
   </div>
 </div>
 
