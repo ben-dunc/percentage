@@ -20,7 +20,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class AppComponent {
   title = 'percentage';
-  targetPer = 80;
+  targetPer = 100;
   showPerNum = 0;
   showPerStr: string = "   ";
   description: string = "   ";
